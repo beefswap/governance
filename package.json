@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/governance",
   "version": "1.0.2",
-  "description": "🏛 Governance contracts for the Uniswap protocol",
+  "description": "🏛 Governance contracts for the Beefswap protocol",
   "author": "Noah Zinsmeister",
   "license": "MIT",
   "files": [
@@ -16,6 +16,10 @@
     "prepublishOnly": "yarn test"
   },
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
     "@uniswap/v2-core": "^1.0.1",
