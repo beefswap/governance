@@ -2,6 +2,7 @@ pragma solidity ^0.5.16;
 
 // this contract gives owner the ability to allow tokens. for pairs in which both tokens are allowed, fees may be
 // collected on that pair and send to feeRecipient, though only after burning all fees up to that point
+
 contract FeeTo {
     address public owner;
     address public feeRecipient;
