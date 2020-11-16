@@ -47,16 +47,16 @@ contract TreasuryVester {
         require(block.timestamp >= vestingCliff, 'TreasuryVester::claim: not time yet');
         uint amount;
         if (block.timestamp >= vestingEnd) {
-            amount = IUni(uni).balanceOf(address(this));
+            amount = IBeef(uni).balanceOf(address(this));
         } else {
             amount = vestingAmount.mul(block.timestamp - lastUpdate).div(vestingEnd - vestingBegin);
             lastUpdate = block.timestamp;
         }
-        IUni(uni).transfer(recipient, amount);
+        IBeef(uni).transfer(recipient, amount);
     }
 }
 
-interface IUni {
+interface IBeef {
     function balanceOf(address account) external view returns (uint);
     function transfer(address dst, uint rawAmount) external returns (bool);
 }

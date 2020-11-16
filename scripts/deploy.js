@@ -30,7 +30,7 @@ async function deloy( addr_gov ,addr_tl ) {
   console.log("Timelock deployed to:", greeter1.address);
   //
   //部署投票合约，需要（时间锁地址，beef地址）
-  addr_tl = "0x" + addr_tl;
+  addr_tl = "0x" + addr_tl;  
   console.log("deloyGov addr:", addr_tl);
   //时间锁地址
   var beef_addr = "0x833e7d4C9C943dD7b734fB7127e5e3f9C1a541E5";
